@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Trapti Katre | 3rd-Year Computer Science Student &amp; Developer Portfolio</title>
+  <meta name="title" content="Trapti Katre | 3rd-Year Computer Science Student Portfolio">
+  <meta name="description" content="Personal portfolio of Trapti Katre, a 3rd-year Computer Science student passionate about Web Development, Java DSA, and Artificial Intelligence.">
+  <meta name="keywords" content="Trapti Katre, Computer Science Student, Web Development, Java DSA, Artificial Intelligence, React, Node.js, Express.js, MongoDB">
+  <meta name="author" content="Trapti Katre">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="scroll-progress-bar" class="scroll-progress-bar" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Trapti Katre Home">
+        <span class="brand-code">&lt;</span>
+        <span class="brand-name">TraptiKatre</span>
+        <span class="brand-code">/&gt;</span>
+        <span class="brand-tag">CS Undergrad</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="menu-toggle" class="btn-icon hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-backdrop" id="menu-backdrop"></div>
+
+  <main id="main-content">
+    
+    <section class="hero section" id="hero">
+      <canvas id="hero-particles" class="hero-particles" aria-hidden="true"></canvas>
+      <div class="container hero-container">
+        <div class="hero-content">
+          
+          <div class="status-badge-group">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span class="status-text">3rd-Year Computer Science Student</span>
+            </div>
+            <div class="status-badge status-badge-hackathon">
+              <span class="hackathon-dot">⚡</span>
+              <span class="status-text">Skillinf Portfolio Hackathon 2026</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Trapti Katre</span>
+          </h1>
+          <p class="hero-role" aria-label="Aspiring Web Developer | Java DSA Enthusiast">
+            <span class="typing-text" id="typing-text">Aspiring Web Developer | Java DSA Enthusiast</span><span class="typing-cursor" aria-hidden="true">|</span>
+          </p>
+
+          <p class="hero-description">
+            A 3rd-year Computer Science student passionate about <strong>Web Development</strong>, <strong>Java DSA</strong>, and <strong>Artificial Intelligence</strong>. Focused on strengthening my full-stack web development skills and analytical problem-solving abilities through structured project engineering and hands-on learning.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" id="hero-explore-btn">
+              <span>Explore My Work</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="assets/TraptiKatre-resume.pdf" download="TraptiKatre-resume.pdf" class="btn btn-secondary" id="hero-resume-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span id="hero-resume-text">Download Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-contact-btn">
+              <span>Contact Me</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="hero-socials-label">Connect:</span>
+            <a href="https://github.com/trapti-07" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/trapti-katre-61a007339?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:traptikatre2006@gmail.com" class="social-chip email-action-btn" id="hero-email-chip" aria-label="Email Me" title="Send email to traptikatre2006@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-avatar-glow"></div>
+          <div class="hero-avatar-container">
+            <img src="assets/photo.jpeg" alt="Trapti Katre - Profile Photo" class="hero-avatar-img" width="350" height="350" loading="eager">
+          </div>
+          
+          <div class="floating-badge badge-top-left" title="Java Data Structures & Algorithms">
+            <span class="badge-icon">☕</span>
+            <span class="badge-text">Java DSA</span>
+          </div>
+          <div class="floating-badge badge-bottom-right" title="Full Stack Web Development">
+            <span class="badge-icon">⚡</span>
+            <span class="badge-text">Web Dev</span>
+          </div>
+          <div class="floating-badge badge-bottom-left" title="Artificial Intelligence Exploration">
+            <span class="badge-icon">🤖</span>
+            <span class="badge-text">AI Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Introduction &amp; Background</h2>
+          <p class="section-subtitle">A natural, honest overview of my education, technical interests, and learning path.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card about-story-card">
+            <div class="about-icon-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              I am <strong>Trapti Katre</strong>, currently a <strong>3rd-year Computer Science student</strong>. I am enthusiastic about software development and eager to understand how modern digital solutions are engineered from concept to implementation.
+            </p>
+            <p>
+              My primary technical interests are <strong>Web Development</strong>, <strong>Java Data Structures &amp; Algorithms (DSA)</strong>, and <strong>Artificial Intelligence</strong>. My current career goal is to steadily enhance my full-stack web development skills and sharpen my analytical problem-solving abilities by working on practical projects.
+            </p>
+            <div class="education-highlight">
+              <div class="edu-item">
+                <span class="edu-degree">Bachelor of Technology (B.Tech) &bull; Computer Science &amp; Engineering</span>
+                <span class="edu-period">3rd Year (2024–2028 Expected)</span>
+              </div>
+              <p class="edu-detail"><strong>Oriental Institute of Science and Technology, Bhopal, Madhya Pradesh</strong></p>
+              <p class="edu-subdetail">Core Focus: Data Structures &amp; Algorithms, Object-Oriented Programming (Java), and Full-Stack Web Development.</p>
+            </div>
+          </div>
+
+          <div class="about-card about-focus-card">
+            <h3>Key Areas of Interest</h3>
+            <div class="focus-list">
+              <div class="focus-item">
+                <div class="focus-icon focus-web">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <div class="focus-text">
+                  <h4>Full-Stack Web Development</h4>
+                  <p>Building responsive user interfaces using HTML, CSS, JavaScript, and React, combined with Node.js and Express backend servers and MongoDB databases.</p>
+                </div>
+              </div>
+
+              <div class="focus-item">
+                <div class="focus-icon focus-java">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="focus-text">
+                  <h4>Java &amp; Problem Solving (DSA)</h4>
+                  <p>Practicing core Data Structures and Algorithms with Java, focusing on time and space complexity, recursion, object-oriented design, and logic development.</p>
+                </div>
+              </div>
+
+              <div class="focus-item">
+                <div class="focus-icon focus-ai">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="focus-text">
+                  <h4>Artificial Intelligence</h4>
+                  <p>Exploring intelligent systems, AI-driven APIs, automated assistance models, and data analytics to build smarter applications.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">3rd</span>
+            <span class="stat-label">Academic Year</span>
+            <span class="stat-desc">Computer Science student</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">Web</span>
+            <span class="stat-label">Development</span>
+            <span class="stat-desc">React, Node, Express, MongoDB</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">Java</span>
+            <span class="stat-label">DSA Core</span>
+            <span class="stat-desc">Algorithms &amp; Problem Solving</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">AI</span>
+            <span class="stat-label">Exploration</span>
+            <span class="stat-desc">Intelligent digital applications</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">Core technologies and programming languages I actively work with and continue to learn.</p>
+        </div>
+
+        <div class="filter-controls" role="tablist" aria-label="Skills filter">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend &amp; Database</button>
+          <button class="filter-btn" data-filter="languages" role="tab" aria-selected="false">Languages</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-wrap html-color">
+                <span class="tech-badge">HTML</span>
+              </div>
+              <span class="skill-level-badge">Frontend</span>
+            </div>
+            <h3 class="skill-title">HTML</h3>
+            <p class="skill-desc">Semantic document structuring, modern web forms, and accessible markup for responsive applications.</p>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-wrap css-color">
+                <span class="tech-badge">CSS</span>
+              </div>
+              <span class="skill-level-badge">Styling</span>
+            </div>
+            <h3 class="skill-title">CSS</h3>
+            <p class="skill-desc">Responsive styling using Flexbox, CSS Grid layouts, media queries, custom variables, and clean animations.</p>
+          </div>
+
+          <div class="skill-card" data-category="frontend languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrap js-color">
+                <span class="tech-badge">JS</span>
+              </div>
+              <span class="skill-level-badge">Core Web</span>
+            </div>
+            <h3 class="skill-title">JavaScript</h3>
+            <p class="skill-desc">DOM manipulation, ES6+ features, asynchronous operations (Promises, fetch), and client-side logic.</p>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-wrap react-color">
+                <span class="tech-badge">React</span>
+              </div>
+              <span class="skill-level-badge">UI Library</span>
+            </div>
+            <h3 class="skill-title">React</h3>
+            <p class="skill-desc">Component-driven architecture, reusable UI elements, React hooks (useState, useEffect), and state management.</p>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon-wrap node-color">
+                <span class="tech-badge">Node</span>
+              </div>
+              <span class="skill-level-badge">Runtime</span>
+            </div>
+            <h3 class="skill-title">Node.js</h3>
+            <p class="skill-desc">Asynchronous JavaScript runtime environment for backend development and server scripting.</p>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon-wrap express-color">
+                <span class="tech-badge">Express</span>
+              </div>
+              <span class="skill-level-badge">Backend Framework</span>
+            </div>
+            <h3 class="skill-title">Express.js</h3>
+            <p class="skill-desc">Building RESTful API endpoints, handling HTTP routing, middleware integration, and request/response pipelines.</p>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon-wrap mongo-color">
+                <span class="tech-badge">MongoDB</span>
+              </div>
+              <span class="skill-level-badge">NoSQL Database</span>
+            </div>
+            <h3 class="skill-title">MongoDB</h3>
+            <p class="skill-desc">Document-based data storage, schema modeling with Mongoose, and fundamental CRUD database operations.</p>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrap java-color">
+                <span class="tech-badge">Java</span>
+              </div>
+              <span class="skill-level-badge">Core Language</span>
+            </div>
+            <h3 class="skill-title">Java</h3>
+            <p class="skill-desc">Object-oriented programming, classes and interfaces, Collections framework, and Data Structures &amp; Algorithms practice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Academic and practical projects showcasing full-stack web development, intelligent assistants, and data analysis.</p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          
+          <article class="project-card">
+            <div class="project-banner project-banner-helvare">
+              <div class="banner-overlay">
+                <span class="banner-badge">Artificial Intelligence</span>
+              </div>
+              <div class="banner-illustration">
+                <div class="helvare-pulse-icon">
+                  <span class="pulse-ring"></span>
+                  <span class="pulse-center">AI</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Emergency Assistance Platform</span>
+              </div>
+              <h3 class="project-title">Helvare AI</h3>
+              <p class="project-desc">
+                An intelligent emergency response and real-time medical incident assistance web platform featuring dispatch tracking, interactive alerts, and automated first-aid guidance.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Artificial Intelligence</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline btn-details" data-project="helvare">
+                  <span>View Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+                <a href="https://github.com/trapti-07/OIST-ACM-AOC-CodeX" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-banner project-banner-campus">
+              <div class="banner-overlay">
+                <span class="banner-badge">Full-Stack Web</span>
+              </div>
+              <div class="banner-illustration">
+                <div class="network-node-group">
+                  <div class="node node-1"></div>
+                  <div class="node-line line-1"></div>
+                  <div class="node node-2"></div>
+                  <div class="node-line line-2"></div>
+                  <div class="node node-3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Management Portal</span>
+              </div>
+              <h3 class="project-title">Campus Event Management System</h3>
+              <p class="project-desc">
+                A role-based event and task management application designed for campus operations, providing administrative oversight, task tracking, and participant coordination dashboards.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline btn-details" data-project="campus">
+                  <span>View Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+                <span class="btn btn-sm btn-disabled-badge" title="Source repository currently in academic deployment">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                  <span>Academic Project</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-banner project-banner-quiz">
+              <div class="banner-overlay">
+                <span class="banner-badge">MERN &bull; AI Assistant</span>
+              </div>
+              <div class="banner-illustration">
+                <div class="quiz-badge-icon">
+                  <span class="quiz-icon-text">?</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Smart Revision Assistant</span>
+              </div>
+              <h3 class="project-title">QuizPilot</h3>
+              <p class="project-desc">
+                An AI-powered revision and exam preparation assistant that generates practice quizzes, tracks student performance, detects weak topic areas, and delivers structured study plans.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Artificial Intelligence</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline btn-details" data-project="quizpilot">
+                  <span>View Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+                <a href="https://github.com/trapti-07/QuizPilot" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-banner project-banner-zoom">
+              <div class="banner-overlay">
+                <span class="banner-badge">WebRTC &bull; Real-Time</span>
+              </div>
+              <div class="banner-illustration">
+                <div class="zoom-video-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Real-Time Video Platform</span>
+              </div>
+              <h3 class="project-title">Zoom Clone</h3>
+              <p class="project-desc">
+                A real-time video conferencing web application replicating Zoom's core features, featuring peer-to-peer multi-user video calling, custom meeting rooms, screen sharing, and live in-meeting chat.
+              </p>
+              <div class="project-tags">
+                <span class="tag">WebRTC</span>
+                <span class="tag">Socket.io</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline btn-details" data-project="zoomclone">
+                  <span>View Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+                <a href="https://github.com/trapti-07/zoom-clone" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="resume section" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials &amp; Coursework</span>
+          <h2 class="section-title">Resume &amp; Education</h2>
+          <p class="section-subtitle">Summary of current undergraduate studies, relevant coursework, and technical competencies.</p>
+        </div>
+
+        <div class="resume-wrapper">
+          <div class="resume-banner-card">
+            <div class="resume-banner-info">
+              <h3>Trapti Katre &bull; 3rd-Year Computer Science Undergrad</h3>
+              <p>Passionate about Web Development, Java DSA, and Artificial Intelligence.</p>
+            </div>
+            
+            <div class="resume-cta-wrap" id="resume-cta-wrap">
+
+              <a href="assets/TraptiKatre-resume.pdf" download="TraptiKatre-resume.pdf" class="btn btn-primary" id="resume-download-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span id="resume-btn-text">Download Resume</span>
+              </a>
+
+              <span class="resume-status-badge" id="resume-status-badge" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                Resume Coming Soon
+              </span>
+            </div>
+          </div>
+
+          <div class="resume-columns">
+
+            <div class="resume-column">
+              <div class="resume-card">
+                <div class="resume-card-header">
+                  <span class="resume-icon">🎓</span>
+                  <h4>Education</h4>
+                </div>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="timeline-date">2024–2028 (Expected) &bull; 3rd Year</span>
+                    <h5 class="timeline-title">Bachelor of Technology (B.Tech)</h5>
+                    <p class="timeline-subtitle">Computer Science and Engineering</p>
+                    <p class="timeline-institution"><strong>Oriental Institute of Science and Technology</strong>, Bhopal, Madhya Pradesh</p>
+                    <p class="timeline-text">Focusing on foundational computer science principles, algorithmic problem solving with Java, and modern web application development.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-card">
+                <div class="resume-card-header">
+                  <span class="resume-icon">💼</span>
+                  <h4>Experience &amp; Practical Training</h4>
+                </div>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="timeline-date">2026 &bull; Participant</span>
+                    <h5 class="timeline-title">CBSOT Summer Internship Program 2026</h5>
+                    <p class="timeline-subtitle">Web Development &amp; Software Engineering Track</p>
+                    <p class="timeline-text">Participant engaging with foundational software engineering methodologies, web development workflows, component architectures, and structured programming practice.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-card">
+                <div class="resume-card-header">
+                  <span class="resume-icon">📚</span>
+                  <h4>Relevant Coursework</h4>
+                </div>
+                <ul class="course-list">
+                  <li><strong>Data Structures &amp; Algorithms:</strong> Arrays, Linked Lists, Stacks, Queues, Trees, Recursion, and Sorting in Java</li>
+                  <li><strong>Object-Oriented Programming:</strong> Encapsulation, Inheritance, Polymorphism, and Interfaces in Java</li>
+                  <li><strong>Database Management Systems:</strong> Relational concepts, SQL queries, NoSQL document data modeling (MongoDB)</li>
+                  <li><strong>Web Technologies:</strong> Client-server models, REST architecture, HTTP methods, and modern web APIs</li>
+                  <li><strong>Operating Systems:</strong> Processes, Memory Management, and Basic Shell Scripting</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-column">
+              <div class="resume-card">
+                <div class="resume-card-header">
+                  <span class="resume-icon">📜</span>
+                  <h4>Certifications &amp; Credentials</h4>
+                </div>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="timeline-date">2025 Certified</span>
+                    <h5 class="timeline-title">Oracle Cloud Infrastructure (OCI) AI Foundations Associate</h5>
+                    <p class="timeline-subtitle">Oracle Certified Associate</p>
+                    <p class="timeline-text">Foundational certification covering cloud AI services, artificial intelligence architecture principles, and infrastructure essentials.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-date">Technical Certificate</span>
+                    <h5 class="timeline-title">Claude101</h5>
+                    <p class="timeline-subtitle">Anthropic AI / Prompt &amp; System Concepts</p>
+                    <p class="timeline-text">Core training covering prompt engineering, AI system integration, and responsible generative model workflows.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-date">Certificate on Record</span>
+                    <h5 class="timeline-title">Agent of Change</h5>
+                    <p class="timeline-subtitle">Professional Development Certificate</p>
+                    <p class="timeline-text">Recognized certification on record in verified credentials documentation.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-card">
+                <div class="resume-card-header">
+                  <span class="resume-icon">🎯</span>
+                  <h4>Learning Objectives &amp; Focus</h4>
+                </div>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="timeline-date">Technical Focus</span>
+                    <h5 class="timeline-title">Web Development &amp; Problem Solving</h5>
+                    <p class="timeline-subtitle">Primary Learning Path</p>
+                    <p class="timeline-text">Deepening knowledge of React, Node.js, Express, and MongoDB to engineer reliable full-stack applications.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-date">Core Practice</span>
+                    <h5 class="timeline-title">Java Data Structures &amp; Algorithms</h5>
+                    <p class="timeline-subtitle">Algorithmic Foundations</p>
+                    <p class="timeline-text">Regular problem solving and algorithmic analysis to write clean, time-efficient, and structured code.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-date">Exploration</span>
+                    <h5 class="timeline-title">Artificial Intelligence</h5>
+                    <p class="timeline-subtitle">Emerging Technologies</p>
+                    <p class="timeline-text">Integrating intelligent capabilities, smart assistants, and API workflows into web systems.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-card">
+                <div class="resume-card-header">
+                  <span class="resume-icon">🛠️</span>
+                  <h4>Developer Tools</h4>
+                </div>
+                <div class="tools-tags">
+                  <span class="tool-tag">Git</span>
+                  <span class="tool-tag">GitHub</span>
+                  <span class="tool-tag">VS Code</span>
+                  <span class="tool-tag">Postman</span>
+                  <span class="tool-tag">MongoDB Compass</span>
+                  <span class="tool-tag">Chrome DevTools</span>
+                  <span class="tool-tag">Vite</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Feel free to reach out for collaborations, academic projects, or professional opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>You can connect with me directly through any of the channels below:</p>
+
+            <div class="contact-methods">
+              
+              <div class="contact-item">
+                <div class="contact-icon email-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:traptikatre2006@gmail.com" class="contact-value email-action-btn" id="email-address-text" title="Click to copy &amp; email traptikatre2006@gmail.com">traptikatre2006@gmail.com</a>
+                </div>
+                <button class="btn-copy" id="copy-email-btn" title="Copy email address" aria-label="Copy email address">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              
+              <div class="contact-item">
+                <div class="contact-icon github-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/trapti-07" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/trapti-07</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon linkedin-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/trapti-katre-61a007339?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/trapti-katre</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon location-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">Status</span>
+                  <span class="contact-value-plain">3rd-Year Computer Science Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Sharma" required minlength="2">
+                <span class="error-msg" id="name-error">Please enter your name (at least 2 characters).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Project Discussion / Query">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4" placeholder="Hello Trapti, I'd like to connect regarding..." required minlength="10"></textarea>
+                <span class="error-msg" id="message-error">Please enter a message (at least 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-code">&lt;</span>
+            <span class="brand-name">TraptiKatre</span>
+            <span class="brand-code">/&gt;</span>
+          </a>
+          <p class="footer-tagline">3rd-Year Computer Science Student &bull; Web Development &amp; Java DSA</p>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="https://github.com/trapti-07" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/trapti-katre-61a007339?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:traptikatre2006@gmail.com" aria-label="Email" class="footer-social-link email-action-btn" title="Send email to traptikatre2006@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year">2026</span> Trapti Katre. Built with HTML5, CSS3, &amp; Vanilla JavaScript.</p>
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top of page" title="Back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal window">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      
+      <div class="modal-header">
+        <span class="modal-badge" id="modal-project-badge">Project Category</span>
+        <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+      </div>
+
+      <div class="modal-body">
+        <h4>Overview</h4>
+        <p id="modal-project-desc">Project description.</p>
+
+        <h4>Key Highlights &amp; Scope</h4>
+        <ul id="modal-project-features" class="modal-features-list">
+          
+        </ul>
+
+        <h4>Technologies Used</h4>
+        <div id="modal-project-tech" class="project-tags">
+         
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-dismiss-btn">
+          <span>Close Overview</span>
+        </button>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-repo-btn" style="display: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>View GitHub Repository</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
